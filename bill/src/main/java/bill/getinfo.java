@@ -26,7 +26,7 @@ public class getinfo {
 	
 	
 	private void setline(int line){
-		this.line=line
+		this.line=line;
 	}
 	public int getline(){
 		return line;
@@ -34,7 +34,7 @@ public class getinfo {
 	
 	
 	private void setusage(int usage){
-		this.usage=usage
+		this.usage=usage;
 	}
 	public int getusage(){
 		return 0;
