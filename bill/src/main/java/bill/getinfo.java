@@ -37,7 +37,7 @@ public class getinfo {
 		this.usage=usage;
 	}
 	public int getusage(){
-		return 0;
+		return usage;
 	}
 	
 }
