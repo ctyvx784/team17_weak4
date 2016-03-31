@@ -4,13 +4,12 @@ public class make_bill {
 	String plan;
 	int line;
 	int usage;
-	int index_of_plan;
+	plan planinfo;
 	
 	public make_bill(){
 		this.plan = null;
 		this.line = 0;
 		this.usage = 0;
-		this.index_of_plan = 0;
 	}
 	public make_bill(String plan, int line, int usage){
 		this.plan = plan;
