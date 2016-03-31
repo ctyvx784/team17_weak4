@@ -5,11 +5,11 @@ public class App
 	private App(){
 		
 	}
-    public static void main( String[] args )
-    {
+    	public static void main( String[] args )
+   	{
     	
-    	getinfo info=new getinfo();
-    	make_bill bill= new make_bill(info.getplan(),info.getline(),info.getusage());
-    	System.out.println("your total bill is "+bill.total_bill());
-    }
+   	 	Getinfo info=new Getinfo();
+   	 	Makebill bill= new Makebill(info.Getplan(),info.Getline(),info.Getusage());
+    		System.out.println("your total bill is "+bill.total_bill());
+   	}
 }

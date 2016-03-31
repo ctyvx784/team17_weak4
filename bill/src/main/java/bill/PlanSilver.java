@@ -1,32 +1,32 @@
 package bill;
 
-public class plan_silver implements plan{
+public class PlanSilver implements Plan{
 	double basiccost;
 	double overchargepermin;
 	double additionallinecost;
 	double familydiscount;
-	public  plan_silver(){
+	public  PlanSilver(){
 		basiccost = 29.95;
 		additionallinecost=21.50;
 		overchargepermin=0.54;
 		familydiscount = 5;
 	}
-	public double get_basic_cost() {
+	public double GetBasicCost() {
 		// TODO Auto-generated method stub
 		return basiccost;
 	}
 
-	public double get_overcharge_cost() {
+	public double GetOverchargeCost() {
 		// TODO Auto-generated method stub
 		return overchargepermin;
 	}
 
-	public double get_additional_line_cost() {
+	public double GetAdditionalLineCost() {
 		// TODO Auto-generated method stub
 		return additionallinecost;
 	}
 
-	public double get_family_discountcost() {
+	public double GetFamilyDiscountcost() {
 		// TODO Auto-generated method stub
 		return familydiscount;
 	}

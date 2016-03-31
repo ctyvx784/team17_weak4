@@ -2,41 +2,41 @@ package bill;
 
 import java.util.*;
 
-public class getinfo {
+public class Getinfo {
 	
-	String plan;
-	int line, usage;
+	private String plan;
+	private int line, usage;
 	Scanner scan;
-	public getinfo(){
+	public Getinfo(){
 		scan=new Scanner(System.in);
 		System.out.print("Input your plan : ");
-		setplan(scan.next());
+		Setplan(scan.next());
 		System.out.print("Input your number of line : ");
-		setline(scan.nextInt());
+		Setline(scan.nextInt());
 		System.out.print("Input your usage : ");
-		setusage(scan.nextInt());
+		Setusage(scan.nextInt());
 	}
 
-	private void setplan(String plan){
+	private void Setplan(String plan){
 		this.plan=plan;
 	}
-	public String getplan(){
+	public String Getplan(){
 		return plan;
 	}
 	
 	
-	private void setline(int line){
+	private void Setline(int line){
 		this.line=line;
 	}
-	public int getline(){
+	public int Getline(){
 		return line;
 	}
 	
 	
-	private void setusage(int usage){
+	private void Setusage(int usage){
 		this.usage=usage;
 	}
-	public int getusage(){
+	public int Getusage(){
 		return usage;
 	}
 	
