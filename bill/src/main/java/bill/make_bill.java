@@ -1,4 +1,4 @@
-﻿package bill;
+package bill;
 
 public class make_bill {
 	String plan;
