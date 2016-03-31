@@ -26,7 +26,7 @@ public class make_bill {
 		if(plan.equals("Gold") ||plan.equals("gold") ){
 			this.index_of_plan = 1;
 		} else if(plan.equals("Silver") ||plan.equals("silver")){
-			this.index_of_plan = 2
+			this.index_of_plan = 2;
 		} else {
 			this.index_of_plan = 0;
 		}
