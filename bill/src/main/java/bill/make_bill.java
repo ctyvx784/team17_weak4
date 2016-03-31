@@ -36,7 +36,7 @@ public class make_bill {
 	 */
 	public double get_linebill(){
 		if(line>3){
-			return planinfo.get_additional_line_cost()*2+familiy_discount();
+			return planinfo.get_additional_line_cost()*2+family_discount();
 		} else{
 			return planinfo.get_additional_line_cost()*(line-1);
 		}
