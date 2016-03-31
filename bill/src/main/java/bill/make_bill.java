@@ -92,6 +92,6 @@ public class make_bill {
 	 * 총 금액 리턴
 	 */
 	public double total_bill(){
-		return 0;
+		return get_basicbill()+get_linebill()+get_overcharge_for_usage();
 	}
 }
