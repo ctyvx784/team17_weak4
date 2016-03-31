@@ -35,6 +35,12 @@ public class make_bill {
 	 * 기본요금 리턴
 	 */
 	public double get_basicbill(){
+		switch(index_of_plan){
+		case 1:
+			return 49.95;
+		case 2:
+			return 29.95;
+		}
 		return 0;
 	}
 	/*
@@ -47,6 +53,16 @@ public class make_bill {
 	 * 초과사용 요금 리턴
 	 */
 	public double get_overcharge_for_usage(){
+		switch(index_of_plan){
+		case 1:
+			if(usage>1000){
+				return (usage - 1000)*0.45;
+			}
+		case 2:
+			if(usage>500){
+				return (usage-500)*0.54;
+			}
+		}
 		return 0;
 	}
 	/*
