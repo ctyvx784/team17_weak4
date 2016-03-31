@@ -28,26 +28,26 @@ public class make_bill {
 	/*
 	 * 기본요금 리턴
 	 */
-	public double get_basicbill(){
-		return planinfo.get_basic_cost();
+	public double Get_basicbill(){
+		return planinfo.Get_basic_cost();
 	}
 	/*
 	 * 회선별 추가요금 리턴
 	 */
-	public double get_linebill(){
+	public double Get_linebill(){
 		if(line>3){
-			return planinfo.get_additional_line_cost()*2+family_discount();
+			return planinfo.Get_additional_line_cost()*2+Family_discount();
 		} else{
-			return planinfo.get_additional_line_cost()*(line-1);
+			return planinfo.Get_additional_line_cost()*(line-1);
 		}
 
 	}
 	/*
 	 * 초과사용 요금 리턴
 	 */
-	public double get_overcharge_for_usage(){
+	public double Get_overcharge_for_usage(){
 		if(usage>1000){
-		         return (usage-1000)*planinfo.get_overcharge_cost();
+		         return (usage-1000)*planinfo.Get_overcharge_cost();
 		} else{
 		         return 0;
 		}
@@ -55,13 +55,13 @@ public class make_bill {
 	/*
 	 * 가족할인 리턴
 	 */
-	public double family_discount(){
-		 return (line-2)*planinfo.get_family_discountcost();
+	public double Family_discount(){
+		 return (line-2)*planinfo.Get_family_discountcost();
 	}
 	/*
 	 * 총 금액 리턴
 	 */
-	public double total_bill(){
-		return get_basicbill()+get_linebill()+get_overcharge_for_usage();
+	public double Total_bill(){
+		return Get_basicbill()+Get_linebill()+Get_overcharge_for_usage();
 	}
 }
