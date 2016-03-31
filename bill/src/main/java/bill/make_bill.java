@@ -47,12 +47,12 @@ public class make_bill {
 	 * 회선별 추가요금 리턴
 	 */
 	public double get_linebill(){
-		if(line>=4){
+		if(line>3){
 			switch(index_of_plan){
 			case 1:
-				return 14.5*line+family_discount();
+				return 14.5*line + family_discount();
 			case 2:
-				return 21.5*line+family_discount();
+				return 21.5*line + family_discount();
 			}
 			return 0;
 		
@@ -60,9 +60,9 @@ public class make_bill {
 		else{
 			switch(index_of_plan){
 			case 1:
-					return 14.5*line;
+					return 14.5 * line;
 			case 2:
-					return 21.5*line;
+					return 21.5 * line;
 			}
 			return 0;
 		}
