@@ -1,10 +1,10 @@
 package bill;
 
 public class PlanGold implements Plan{
-	double basiccost=49.95;
-	double overchargepermin=14.50;
-	double additionallinecost=0.45;
-	double familydiscount=5;
+	static final double basiccost=49.95;
+	static final double overchargepermin=14.50;
+	static final double additionallinecost=0.45;
+	static final double familydiscount=5;
 	public PlanGold(){
 	}
 	public double getBasicCost() {
