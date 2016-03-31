@@ -1,15 +1,11 @@
 package bill;
 
 public class PlanGold implements Plan{
-	double basiccost;
-	double overchargepermin;
-	double additionallinecost;
-	double familydiscount;
+	double basiccost=49.95;
+	double overchargepermin=14.50;
+	double additionallinecost=0.45;
+	double familydiscount=5;
 	public PlanGold(){
-		basiccost = 49.95;
-		additionallinecost=14.50;
-		overchargepermin=0.45;
-		familydiscount = 5;
 	}
 	public double getBasicCost() {
 		// TODO Auto-generated method stub
