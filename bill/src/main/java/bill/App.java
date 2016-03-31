@@ -9,7 +9,7 @@ public class App
    	{
     	
    	 	Getinfo info=new Getinfo();
-   	 	Makebill bill= new Makebill(info.Getplan(),info.Getline(),info.Getusage());
-    		System.out.println("your total bill is "+bill.total_bill());
+   	 	Makebill bill= new Makebill(info.getPlan(),info.getLine(),info.getUsage());
+    		System.out.println("your total bill is "+bill.totalBill());
    	}
 }

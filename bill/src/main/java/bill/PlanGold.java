@@ -11,22 +11,22 @@ public class PlanGold implements Plan{
 		overchargepermin=0.45;
 		familydiscount = 5;
 	}
-	public double GetBasicCost() {
+	public double getBasicCost() {
 		// TODO Auto-generated method stub
 		return basiccost;
 	}
 
-	public double GetOverchargeCost() {
+	public double getOverchargeCost() {
 		// TODO Auto-generated method stub
 		return overchargepermin;
 	}
 
-	public double GetAdditionalLineCost() {
+	public double getAdditionalLineCost() {
 		// TODO Auto-generated method stub
 		return additionallinecost;
 	}
 
-	public double GetFamilyDiscountcost() {
+	public double getFamilyDiscountcost() {
 		// TODO Auto-generated method stub
 		return familydiscount;
 	}

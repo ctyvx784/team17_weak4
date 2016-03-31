@@ -10,33 +10,33 @@ public class Getinfo {
 	public Getinfo(){
 		scan=new Scanner(System.in);
 		System.out.print("Input your plan : ");
-		Setplan(scan.next());
+		setPlan(scan.next());
 		System.out.print("Input your number of line : ");
-		Setline(scan.nextInt());
+		setLine(scan.nextInt());
 		System.out.print("Input your usage : ");
-		Setusage(scan.nextInt());
+		setUsage(scan.nextInt());
 	}
 
-	private void Setplan(String plan){
+	private void setPlan(String plan){
 		this.plan=plan;
 	}
-	public String Getplan(){
+	public String getPlan(){
 		return plan;
 	}
 	
 	
-	private void Setline(int line){
+	private void setLine(int line){
 		this.line=line;
 	}
-	public int Getline(){
+	public int getLine(){
 		return line;
 	}
 	
 	
-	private void Setusage(int usage){
+	private void setUsage(int usage){
 		this.usage=usage;
 	}
-	public int Getusage(){
+	public int getUsage(){
 		return usage;
 	}
 	
