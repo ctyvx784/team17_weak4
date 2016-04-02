@@ -1,6 +1,6 @@
 package bill;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class App{
 	
@@ -8,13 +8,13 @@ public class App{
 		
 	}
     	public static void main( String[] args ){   	
-   	 	scan=new Scanner(System.in);
+   	 	Scanner scan=new Scanner(System.in);
 		System.out.print("Input your plan : ");
-		String plan = scan.next();
+		private String plan = scan.next();
 		System.out.print("Input your number of line : ");
-		int line = scan.nextInt();
+		private int line = scan.nextInt();
 		System.out.print("Input your usage : ");
-		int usage = scan.nextInt();
+		private int usage = scan.nextInt();
    	 	Makebill bill= new Makebill(plan,line,usage);
     		System.out.println("your total bill is "+bill.totalBill());
    	}
