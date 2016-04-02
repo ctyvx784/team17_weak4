@@ -7,7 +7,7 @@ public class App{
 	private App(){
 		
 	}
-    	public static void main( String[] args ){   	{
+    	public static void main( String[] args ){   	
    	 	scan=new Scanner(System.in);
 		System.out.print("Input your plan : ");
 		private String plan = scan.next();
