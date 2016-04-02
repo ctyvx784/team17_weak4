@@ -3,7 +3,7 @@ package bill;
 public class PlanSilver implements Plan{
 	double basiccost=29.95;
 	double overchargepermin=21.50;
-	double additionallinecost0.54;
+	double additionallinecost=0.54;
 	double familydiscount=5;
 	public  PlanSilver(){
 		
